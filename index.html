@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crystal Collector Game</title>
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>CrystalCollector!</h1>
+
+	<section class="rules">
+		<p>You will be given a random number at the start of the game.</p><br>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p><br>
+		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p><br>
+		<p>The value of each crystal is hidden from you until you click on it.</p><br>
+		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+	</section>
+
+	<section class="numbers">
+		<div class="randomNumber">0</div>
+
+		<div class="scoreBoard">
+			<strong>Wins: 0</strong><data id="wins"></data><br>
+			<strong>Loses: 0</strong><data id="loses"></data>
+		</div>
+	</section>
+
+	<div>
+		<a id="jewel1" href="http://clipart-library.com/clipart/214218.htm"><img src="http://clipart-library.com/data_images/214218.png" width="80" height="80" /></a>
+		<a id="jewel2" href="http://clipart-library.com/clipart/477425.htm"><img src="http://clipart-library.com/data_images/477425.png" width="80" height="80" /></a>
+		<a id="jewel3" href="http://clipart-library.com/clipart/477454.htm"><img src="http://clipart-library.com/data_images/477454.png" width="80" height="80" /></a>
+		<a id="jewel4" href="http://clipart-library.com/clipart/477373.htm"><img src="http://clipart-library.com/data_images/477373.png" width="80" height="80" /></a>
+	</div>
+
+	<div class="scoreTitle"> Your total score is:</div>
+
+	<div class="scoreTile">0</div>
+	
+</body>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+</html>		

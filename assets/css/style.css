@@ -1,0 +1,60 @@
+body {
+	background-image: url(../images/hypnotize.png);
+}
+
+h1 {
+	background-color: #ca7324;
+	color: white;
+	font-size: 30px;
+	max-width: 200px;
+	padding: 20px;
+}
+
+.rules {
+	background-color: #fbe6cd;
+	color: #5bc880;
+	max-width: 500px;
+	padding: 10px;
+}
+
+.numbers {
+	display: flex;
+	margin: 5px 0;
+}
+
+.randomNumber {
+	background-color: #5bc880;
+	font-size: 50px;
+	text-align: center;
+	padding: 45px 30px 30px 30px;
+	width: 80px;
+	margin: 0 10px;
+}
+
+.scoreBoard {
+	background-color: #5bc880;
+	font-size: 20px;
+	max-width: 100px;
+	padding: 30px;
+	line-height: 40px;
+}
+
+a {
+	margin: 10px;
+	border: solid 3px #ca7324;
+	background-color: #ca7324;
+	margin: 5px 0;
+}
+
+.scoreTitle, .scoreTile {
+	background-color: #2ba296;
+	color: white;
+	max-width: 200px;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.scoreTile {
+	text-align: center;
+	font-size: 30px
+}
