@@ -39,6 +39,11 @@ h1 {
 	line-height: 40px;
 }
 
+img {
+	height: 80px;
+	width: 80px;
+}
+
 a {
 	margin: 10px;
 	border: solid 3px #ca7324;

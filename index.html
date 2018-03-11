@@ -9,6 +9,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </head>
 <body>
 	<h1>CrystalCollector!</h1>
@@ -25,16 +26,16 @@
 		<div class="randomNumber">0</div>
 
 		<div class="scoreBoard">
-			<strong>Wins: 0</strong><data id="wins"></data><br>
-			<strong>Loses: 0</strong><data id="loses"></data>
+			<strong>Wins: <data id="wins">0</data></strong><br>
+			<strong>Loses: <data id="losses">0</data></strong>
 		</div>
 	</section>
 
 	<div>
-		<a id="jewel1" href="http://clipart-library.com/clipart/214218.htm"><img src="http://clipart-library.com/data_images/214218.png" width="80" height="80" /></a>
-		<a id="jewel2" href="http://clipart-library.com/clipart/477425.htm"><img src="http://clipart-library.com/data_images/477425.png" width="80" height="80" /></a>
-		<a id="jewel3" href="http://clipart-library.com/clipart/477454.htm"><img src="http://clipart-library.com/data_images/477454.png" width="80" height="80" /></a>
-		<a id="jewel4" href="http://clipart-library.com/clipart/477373.htm"><img src="http://clipart-library.com/data_images/477373.png" width="80" height="80" /></a>
+		<img id="crystal1" src="./assets/images/jewel1.png">
+		<img id="crystal2" src="./assets/images/jewel2.png">
+		<img id="crystal3" src="./assets/images/jewel3.png">
+		<img id="crystal4" src="./assets/images/jewel4.png">
 	</div>
 
 	<div class="scoreTitle"> Your total score is:</div>
@@ -42,5 +43,4 @@
 	<div class="scoreTile">0</div>
 	
 </body>
-<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </html>		
