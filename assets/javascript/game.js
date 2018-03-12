@@ -52,19 +52,19 @@ $(document).ready(function(){
 
 	function runningScore(crystalVal) {
 		playersScore += crystalVal;
-		$('.scoreTile').text(playersScore);
 		gameOutcome();
+		$('.scoreTile').text(playersScore);
 	};
 
 	function gameOutcome() {
 		if(playersScore === createNumber) {
 			winsScore++;
-			$('#wins').text(winsScore);
 			gameSetup();
+			$('#wins').text(winsScore);
 		} else if (playersScore > createNumber) {
 			lossesScore++;
-			$('#losses').text(lossesScore);
 			gameSetup();
+			$('#losses').text(lossesScore);
 		};	
 	}; 
 });
