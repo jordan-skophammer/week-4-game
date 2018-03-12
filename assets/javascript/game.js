@@ -30,43 +30,41 @@ $(document).ready(function(){
 		
 	};
 
-	// gameSetup();
-
 	$('#crystal1').on("click", function() {
 		console.log(crystalOne);
 		runningScore(crystalOne);
-	})
+	});
 
 	$('#crystal2').on("click", function() {
 		console.log(crystalTwo);
 		runningScore(crystalTwo);
-	})
+	});
 
 	$('#crystal3').on("click", function() {
 		console.log(crystalThree);
 		runningScore(crystalThree);
-	})
+	});
 
 	$('#crystal4').on("click", function() {
 		console.log(crystalFour);
 		runningScore(crystalFour);
-	})
+	});
 
 	function runningScore(crystalVal) {
-		playersScore = playersScore + crystalVal;
+		playersScore += crystalVal;
 		$('.scoreTile').text(playersScore);
 		gameOutcome();
-	}
+	};
 
 	function gameOutcome() {
 		if(playersScore === createNumber) {
-			winsScore++
+			winsScore++;
 			$('#wins').text(winsScore);
 			gameSetup();
 		} else if (playersScore > createNumber) {
 			lossesScore++;
 			$('#losses').text(lossesScore);
 			gameSetup();
-		}	
-	} 
+		};	
+	}; 
 });

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Crystal Collector Game</title>
-	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -12,35 +12,59 @@
 	<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </head>
 <body>
-	<h1>CrystalCollector!</h1>
 
-	<section class="rules">
-		<p>You will be given a random number at the start of the game.</p><br>
-		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p><br>
-		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p><br>
-		<p>The value of each crystal is hidden from you until you click on it.</p><br>
-		<p>Each time when the game starts, the game will change the values of each crystal.</p>
-	</section>
-
-	<section class="numbers">
-		<div class="randomNumber">0</div>
-
-		<div class="scoreBoard">
-			<strong>Wins: <data id="wins">0</data></strong><br>
-			<strong>Loses: <data id="losses">0</data></strong>
+	<main class="container">
+		<div class="row">
+			<h1 class="col-md-12">CrystalCollector!</h1>
 		</div>
-	</section>
+		
+		<div class="row">
+			<aside class="col-md-3"></aside>
+			<section class="col-md-6 rules">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</section>
+			<aside class="col-md-3"></aside>
+		</div>
+		
+		<div class="row">
+			<aside class="col-md-3"></aside>
+			<section class="col-md-6 text-center numbers">
+				<div class="col-md-6 randomNumber">0</div>
 
-	<div>
-		<img id="crystal1" src="./assets/images/jewel1.png">
-		<img id="crystal2" src="./assets/images/jewel2.png">
-		<img id="crystal3" src="./assets/images/jewel3.png">
-		<img id="crystal4" src="./assets/images/jewel4.png">
-	</div>
+				<div class="col-md-6 scoreBoard">
+					<strong>Wins: <data id="wins">0</data></strong><br>
+					<strong>Losses: <data id="losses">0</data></strong>
+				</div>
+			</section>
+			<aside class="col-md-3"></aside>	
+		</div>
+		
+		<div class="row">
+			<aside class="col-md-3"></aside>
+			<section class="col-md-6 text-center">
+				<img id="crystal1" src="./assets/images/jewel1.png">
+				<img id="crystal2" src="./assets/images/jewel2.png">
+				<img id="crystal3" src="./assets/images/jewel3.png">
+				<img id="crystal4" src="./assets/images/jewel4.png">
+			</section>
+			<aside class="col-md-3"></aside>		
+		</div>
+		
+		<div class="row">
+			<aside class="col-md-3"></aside>
+			<section class="col-md-6">
+				<div class="text-center scoreTitle"> Your total score is: <!-- <data class="scoreTile">0</data> --></div>
 
-	<div class="scoreTitle"> Your total score is:</div>
+				<div class="text-center scoreTile">0</div>	
+			</section>
+			<aside class="col-md-3"></aside>	
+		</div>			
+	</main>
 
-	<div class="scoreTile">0</div>
-	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 </body>
 </html>		
