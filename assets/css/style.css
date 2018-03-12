@@ -2,16 +2,31 @@ body {
 	background-image: url(../images/hypnotize.png);
 }
 
+@font-face {
+	font-family: Danger Dots;
+	src: url("../fonts/Danger on the Motorway.woff") format("woff"), url("../fonts/Danger on the Motorway.otf") format("opentype");
+}
+
+@font-face {
+	font-family: spectrashell;
+	src: url("../fonts/spectrashell.ttf") format("truetype");
+}
+
+.rules, .numbers, .randomNumber, .scoreBoard, .scoreTitle, .scoreTile {
+	font-family: spectrashell;
+}
+
 h1 {
+	font-family: Danger Dots;
 	color: #2ba296;
 	text-align: center;
-	font-size: 50px;
+	font-size: 70px;
 }
 
 .rules {
-	background-color: #fbe6cd;
 	color: #5bc880;
 	padding: 10px;
+	font-size: 16px;
 }
 
 .numbers {
@@ -23,13 +38,13 @@ h1 {
 	background-color: #5bc880;
 	font-size: 50px;
 	text-align: center;
-	padding: 45px 30px 30px 30px;
+	padding: 30px;
 	margin: 0 10px;
 }
 
 .scoreBoard {
 	background-color: #5bc880;
-	font-size: 20px;
+	font-size: 30px;
 	padding: 30px;
 	line-height: 40px;
 }
@@ -37,13 +52,6 @@ h1 {
 img {
 	height: 80px;
 	width: 80px;
-}
-
-a {
-	margin: 10px;
-	border: solid 3px #ca7324;
-	background-color: #ca7324;
-	margin: 5px 0;
 }
 
 .scoreTitle, .scoreTile {
@@ -54,5 +62,5 @@ a {
 
 .scoreTile {
 	text-align: center;
-	font-size: 30px
+	font-size: 40px
 }
