@@ -17,11 +17,11 @@ $(document).ready(function(){
 	$('.randomNumber').text(createNumber);
 
 	function gameSetup() {
-		var createNumber = Math.floor(Math.random() * 100) + 20;
-		var crystalOne = Math.floor(Math.random() * 12) + 1;
-		var crystalTwo = Math.floor(Math.random() * 12) + 1;
-		var crystalThree = Math.floor(Math.random() * 12) + 1;
-		var crystalFour = Math.floor(Math.random() * 12) + 1;
+		createNumber = Math.floor(Math.random() * 100) + 20;
+		crystalOne = Math.floor(Math.random() * 12) + 1;
+		crystalTwo = Math.floor(Math.random() * 12) + 1;
+		crystalThree = Math.floor(Math.random() * 12) + 1;
+	 	crystalFour = Math.floor(Math.random() * 12) + 1;
 
 		$('.randomNumber').text(createNumber);
 
